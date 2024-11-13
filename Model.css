@@ -1,0 +1,112 @@
+.modal-custom-bg {
+    background-color: rgb(40, 38, 38);
+    color: white;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.modal-lg {
+    max-width: 80%;
+}
+
+.modal-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+}
+
+.modal-content {
+    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(40, 38, 38);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-content:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 16px 48px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+
+.modal-header,
+.modal-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: none;
+}
+
+.modal-header h1 {
+    font-size: 2.5rem;
+    position: relative;
+    color: #FFB400;
+}
+
+.modal-footer h3 {
+    font-size: 1.8rem;
+    color: #FFB400;
+}
+
+button.btn-secondary,
+button.btn-primary {
+    background-color: #FFB400;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+button.btn-secondary:hover,
+button.btn-primary:hover {
+    background-color: #e0a200;
+    transform: scale(1.1);
+}
+
+.skill-item,
+.tool-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 10px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill-item:hover,
+.tool-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #FFB400;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.model-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.model-col {
+    flex: 1;
+    margin: 10px;
+    max-width: calc(33.33% - 20px);
+}
+
+.internships {
+    margin-top: 20px;
+    color: white;
+}
+
+.internships h5 {
+    color: #FFB400;
+    font-size: 1.2rem;
+}
+
+.internships p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}

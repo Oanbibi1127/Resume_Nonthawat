@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.funnel-display-title {
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+.funnel-display-body {
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+
+.left {
+    width: 30%;
+    background-color: #FFB400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.center {
+    width: 70%;
+    background-color: rgb(40, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.right {
+    width: 10%;
+    background-color: rgb(40, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.image-frame {
+    width: 80%;
+    height: 85%;
+    border-radius: 40px;
+    overflow: hidden;
+    filter: drop-shadow(0 0 0.75rem #555454);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-10deg);
+    transform-origin: top right;
+    overflow: hidden;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+
+table,
+th {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+/* table, th, td {
+    border: 1px solid #333;
+} */
+
+th,
+td {
+    padding: 10px;
+    background-color: rgb(40, 38, 38);
+    color: #333;
+}
+
+
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 45px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #FFB400;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #000000;
+}
+
+.custom-button::after {
+    content: '➔';
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #FFB400;
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    color: #ffffff;
+    background-color: #FFB400;
+}
+
+.custom-button:hover::after {
+    color: #FFB400;
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+
+/* แถบเครื่องมือ */
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.toolbar-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbar-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.toolbar-button:hover {
+    background-color: FFB400;
+}
+
+/* Tooltip สำหรับคำอธิบาย */
+.toolbar-item::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    background-color: FFB400;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.toolbar-item:hover::after {
+    opacity: 1;
+}
+
+.text-highlight {
+    color: #FFB400;
+
+}
+.modal-custom-bg {
+    background-color: rgb(40, 38, 38);
+    color: white;
+    position: relative;
+}
+
+.modal-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.modal-title::before {
+    content: "RESUME";
+    font-size: 5rem;
+    color: rgba(128, 128, 128, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.text-highlight {
+    color: #FFB400;
+}
+
+.text-highlight2 {
+    color: #aca2a2;
+}
+
+
+.personal-info p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+
+.achievements {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.achievement-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    flex: 1;
+    margin: 10px;
+}
+
+.achievement-item strong {
+    font-size: 2rem;
+    color: #FFB400;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+button.btn-secondary, button.btn-primary {
+    background-color: #FFB400;
+    border: none;
+}
+
+button.btn-secondary:hover, button.btn-primary:hover {
+    background-color: #e0a200;
+}
+
+
